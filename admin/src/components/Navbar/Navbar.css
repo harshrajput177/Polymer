@@ -4,10 +4,11 @@
     align-items: center;
     padding: 6px 4%;
 }
- .logo-para{
+ .logo-para h2{
     text-align: start;
-    font-size:12px;
+    font-size:26px;
      margin-right:5px; 
+     color: blue;
 }
 .navbar .logo{
     width: max(10% ,130px);

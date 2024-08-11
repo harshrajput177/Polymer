@@ -61,23 +61,23 @@ const Add = () => {
     <div className="add">
         <form  onSubmit={onSumbitHandler}  className="flex-col">
             <div className="add-img-upload  flex-col">
-                <p>Upload image</p>
+                <p>Upload Our Service image</p>
                 <label htmlFor='image'>
                     <img src={image?URL.createObjectURL(image):assets.upload_area} alt=''/>
                 </label>
                 <input type='file' id='image' onChange={handleImageChange}   hidden required />
             </div>
             <div className="add-product-name flex-col" >
-                <p>Product name</p>
+                <p>Service name</p>
                 <input type='text'  onChange={changeHandle} value={data.name}  name='name'   placeholder='type here'  required/>
             </div>
             <div className="add-product-description  flex-col">
-                <p>Product description</p>
+                <p>Service description</p>
                 <textarea name='description'  onChange={changeHandle}  value={data.description}      rows='6' placeholder='write content here' required />
             </div>
             <div className="add-category-price">
                 <div className="add-category   flex-col"> 
-                    <p>Product category</p>
+                    <p>Service category</p>
                     <select  onChange={changeHandle}   name="category" id="category">
                        <option value="Zebra Crossing">Zebra Crossing</option>
                        <option value="Injection Grouting">Injection Grouting</option>

@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
   <div className="navbar">
     <div className="logo-para">
-    <img className='logo' src={assets.logo} alt="" />
+      <h2>Angle High-Teach</h2>
   <p>Admin panel</p>
     </div>
  
