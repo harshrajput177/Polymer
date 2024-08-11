@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 
 const List = () => {
   const [list , setList] = useState([]);
-  const url = "http://localhost:5050"
+  const url = "https://polymer-backend.onrender.com"
   const fetchList = async()=>{
     const response = await axios.get(`${url}/food/list`);
     // console.log(response.data)
