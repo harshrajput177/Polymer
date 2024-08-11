@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  const url = "http://localhost:5050"
+  const url = "https://polymer-backend.onrender.com"
   return (
     <div>
       <ToastContainer />
