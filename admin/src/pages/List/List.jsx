@@ -39,7 +39,7 @@ const List = () => {
 
   return (
     <div className='list add flex-col'>
-       <p>All Service List</p>
+       <h2>All Service List</h2>
        <div className="list-table">
         <div className="list-table-format  title">
           <b>Image</b>
