@@ -1,0 +1,103 @@
+.header {
+    height: 70vh;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    transition: background-image 1s ease-in-out;
+}
+
+
+.header-content h2{
+    font-weight: 500;
+    font-size: max(3vw, 22px);
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.9vw;
+   left: 6vw;
+   top: 32%;
+   animation: fadeIn 2s ease-in-out;
+}
+.header-About{
+margin-left:78%;
+margin-top: 33%;
+font-weight: 550;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 30px;
+    padding: 1vw 1vw;
+    background-color: rgb(239, 239, 239);
+    animation: fadeIn 2s ease-in-out;
+}
+.header-About:hover{
+background-color: rgb(255, 244, 244);
+  
+}
+
+
+.header-content p{
+    color: rgb(13, 13, 13);
+    font-size: 1.4vw;
+    max-width: 50vw;
+}
+.header-content button{
+    font-weight: 540;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 30px;
+    padding: 1vw 2vw;
+    background-color: whitesmoke;
+}
+
+@media (min-width:1050px){
+    .header-About{
+        display: none;
+    }
+}
+
+@media (max-width:1050px){
+
+    
+
+    .header{
+           height: 35vw;
+           top:20px;
+          
+    }
+    .header-content{
+        max-width: 45%;
+        top: 33%;
+    }
+    
+
+    @media (max-width:750px){
+        
+        .header-content{
+            max-width: 100%;
+            top: 20%;
+        }
+        .header-content p{
+            display: none;
+        }
+        .header-content button{
+            padding: 1.7vw 3.5vw;
+            font-size: 1.6vw;
+            font-weight: 550;
+            
+        }
+        .header-About{
+            padding: 1.7vw 2vw;
+           margin-top: 31%;
+          margin-left: 77%;
+          font-size: 1.6vw;
+        }
+
+}
+}

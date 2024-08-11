@@ -1,0 +1,23 @@
+.AppDownload{
+    margin-top: 80px;
+    text-align: center;
+}
+.AppDownload p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.AppDownload-palteform{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.AppDownload-palteform img{
+    width: max(12vw, 120px);
+    transition: 0.5s;
+    max-width: 180px;
+}
+.AppDownload-palteform img:hover{
+    transform: scale(1.05);
+}

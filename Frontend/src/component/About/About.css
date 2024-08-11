@@ -1,0 +1,72 @@
+.about-panel{
+    margin-top: 20px;
+}
+.about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.about-info h1{
+    color: blue;
+    padding-bottom: 10px;
+}
+.about-panel {
+    display: flex;
+    gap: 40px; /* Adjust the gap to control the space between the content and image */
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-info {
+    max-width: 600px;
+}
+
+.about-info h1,
+.about-info h2 {
+    margin-bottom: 10px;
+}
+
+.about-info p {
+    margin-bottom: 15px;
+}
+
+.about-img img,
+.about-content-img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: background-image 1s ease-in-out;
+}
+
+.about-content-img {
+    margin-top: 20px; /* Adjust margin to space out the content image */
+    margin-left: 20px;
+}
+
+/* @keyframes background-image { */
+    /* from{
+        
+    } */
+
+    .with-check::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        border-right: 3px solid green;
+        border-bottom: 3px solid green;
+        transform: rotate(45deg);
+        margin-right: 8px; /* Adjust the space between the checkmark and the text */
+        margin-bottom: 2px; /* Adjust the vertical alignment */
+    }
+@media (max-width:750px){
+    .with-check::before {
+        width: 8px;
+        height: 16px;
+    }
+}    
+

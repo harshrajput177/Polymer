@@ -1,0 +1,36 @@
+/* Statistics.css */
+.statistics {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:200px;
+    align-items: center;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(87, 151, 253), rgb(145, 222, 229));
+  }
+  
+  .stat-item {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+  }
+.stat-item  h2{
+    color:white;
+  }
+
+  .stat-item img{
+        width: 50px;
+        height: 50px;
+  }
+  @media (max-width:750px){
+    .statistics{
+        flex-direction: column;
+        height: auto;
+    }
+   
+
+  }
+  

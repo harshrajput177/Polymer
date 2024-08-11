@@ -1,0 +1,266 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px;
+    font-weight: 800;
+    color: rgb(23, 112, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+.navbar-menu {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 25px;
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+    color: #49557e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-menu a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-menu .active {
+    padding-bottom: 1.5px; 
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    height: 15px;
+    /* padding-top: 15px; */
+    align-items: center;
+}
+
+.menu-icon{
+    width: 35px;
+    height: 30px;
+    display: none;
+}
+
+/* .search-btn {
+    padding-top: 2.6px;
+    height: 25px;
+    font-size: 30px;
+    background-color: transparent;
+} */
+
+.baket-icon {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: tomato;
+    border-radius: 10px;
+    right: -8px;
+    top: -8px;
+}
+
+.navbar-right .btn {
+    width: 90px;
+    height: 38px;
+    border-radius: 8rem;
+    background-color: transparent;
+    border: 0.2px solid rgb(50, 81, 254);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f6f9ff;
+}
+
+.navIcon {
+    color: tomato;
+}
+
+.navbar-profile {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    right: 0;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 0.7vw 2vw;
+}
+.nav-menu-mobile.show {
+    display: none;
+}
+
+.nav-profile-dropdown p:hover {
+    color: tomato;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    border: 1px solid tomato;
+    background-color: rgb(254, 240, 240);
+    list-style: none;
+}
+.nav-menu-mobile{
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 180px;
+    }
+
+    .nav-menu-mobile{
+        display: none;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 23px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    /* .search-btn {
+        margin-top: 4px;
+        height: 23px;
+    } */
+
+    .navbar .logo {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100px;
+        height: 50px;
+        font-size: 34px;
+    }
+
+    .btn {
+        border: 2px solid tomato;
+    }
+
+    .navbar-right .btn {
+        width: 83px;
+        height: 34px;
+        bottom: 0.9rem;
+    }
+
+    /* .logo-point {
+        width: 6px;
+        height: 6px;
+        margin-top: 50px;
+        margin-left: 22px;
+    } */
+
+    /* .baket-icon {
+        margin-top: 3px;
+        height: 25px;
+    } */
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu-mobile {
+        position: absolute;
+        top:0; /* Adjust as needed */
+        right: 0;
+        background: linear-gradient(to right, rgb(87, 151, 253), rgb(145, 222, 229));
+        width: 250px;
+        height: 100vh;
+        border-bottom-left-radius: 3px;
+        z-index: 101;
+        padding-top: 35px; /* Add padding to the top */
+        gap: 12px;
+        padding-left: 40px;
+    }
+    .nav-menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+.nav-menu-mobile a {
+    padding: 10px 20px; /* Add padding to each link for better click area */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    font-size: 19px; /* Adjust font size if needed */
+    list-style: none; /* Remove default list styles */
+}
+
+    .close-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
