@@ -7,7 +7,7 @@ const StoreContextProvider = (props) => {
     const [token, setToken] = useState("");
     const [foodList, setFoodList] = useState([]);
 
-    const url = "http://localhost:5050";  // Removed the extra space before http
+    const url = "https://polymer-backend.onrender.com";  // Removed the extra space before http
 
     const fetchFood = async () => {
         try {
