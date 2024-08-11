@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const Add = () => {
 
-    const url = "http://localhost:5050";
+    const url = "https://polymer-backend.onrender.com";
     const[image, setImage] = useState(false);
     const[data, setData] = useState({
         name : "",
